@@ -16,20 +16,37 @@ export default {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
+        "input-border": "hsl(var(--input-border))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "surface-elevated": "hsl(var(--surface-elevated))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          hover: "hsl(var(--primary-hover))",
           foreground: "hsl(var(--primary-foreground))",
+          muted: "hsl(var(--primary-muted))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
+          hover: "hsl(var(--secondary-hover))",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
+          hover: "hsl(var(--destructive-hover))",
           foreground: "hsl(var(--destructive-foreground))",
+          muted: "hsl(var(--destructive-muted))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+          muted: "hsl(var(--success-muted))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+          muted: "hsl(var(--warning-muted))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -47,6 +64,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        nav: {
+          background: "hsl(var(--nav-background))",
+          border: "hsl(var(--nav-border))",
+        },
+        header: {
+          background: "hsl(var(--header-background))",
+          border: "hsl(var(--header-border))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -59,9 +84,16 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "var(--radius-lg)",
+        DEFAULT: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        sm: "var(--radius-sm)",
+      },
+      boxShadow: {
+        subtle: "var(--shadow-subtle)",
+        card: "var(--shadow-card)",
+        elevated: "var(--shadow-elevated)",
+        overlay: "var(--shadow-overlay)",
       },
       keyframes: {
         "accordion-down": {
